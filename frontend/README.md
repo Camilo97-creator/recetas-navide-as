@@ -1,50 +1,93 @@
-# React + TypeScript + Vite
+# RECETAS NAVIDEÑAS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del proyecto:
 
-Currently, two official plugins are available:
+Este proyecto consiste en una plataforma web diseñada para administrar y gestionar recetas navideñas. Permite a los usuarios registrar sus recetas, organizarlas por categorías y hacer seguimiento a su popularidad mediante estadísticas básicas opcionales. Además, la página ofrece una experiencia responsiva, adáptandose a dispositivos móviles y de escritorio.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Gestión de Recetas:
 
-## Expanding the ESLint configuration
+- Crear y registrar recetas navideñas.
+- Listar recetas con detalles como nombre, categoría e ingredientes.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Gestión de usuarios:
 
-- Configure the top-level `parserOptions` property like this:
+- Crear un listado de usuarios con información como nombre y correo electrónico.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Diseño Responsivo:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Contiene una interfaz resposiva con dispositivos móviles y de escritorio.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+# Requisitos Técnicos:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Frontend:
+
+  - Framework: React.js con TypeScript.
+  - Estilos: CSS para personalización.
+
+npm create vite@latest frontend (seleccionamos react y typescript)
+
+desde el visual entramos a la carpeta con cd frontend
+
+npm install
+
+npm install react-dom
+
+npm run dev
+
+npm install react-router-dom @mui/material @emotion/react @emotion/styled axios
+
+npm install -D eslint prettier eslint-config-prettier eslint-plugin-react eslint-plugin-react-hooks
+
+npx tsc --init
+
+npm i --save-dev @types/node
+
+npm run build
+
+npm run dev
+
+## Backend:
+
+  - Framework: Node.js con Express.
+  - Base de Datos: MongoDB para el almacenamiento de recetas y usuarios.
+
+npm init -y
+
+npm install express mongoose cors dotenv
+
+npm install -D nodemon eslint prettier eslint-config-prettier eslint-plugin-node eslint-plugin-import
+
+npx create-gitignore node
+
+npm install -D typescript ts-node @types/node @types/express @types/mongoose @types/cors nodemon eslint prettier eslint-config-prettier eslint-plugin-node eslint-plugin-import
+
+npx tsc --init
+
+npm run build (para compilar)
+
+npm run start
+
+## Control de Código:
+
+  - Uso de Git y GitHub para la gestión de versiones del proyecto.
+
+## Otros Requisitos:
+
+  - Varaibles de entorno configuradas mediante archivos .env.
+
+### Organización del Trabajo en equipo:
+
+Equipo conformado por: Camilo Esteban Muñoz, Marillac Andrade, Miguel Angel Escobar Quintero y Catalina Melo Alzate, el cual se trabajo:
+
+  - Frontend: Diseñando la interfaz y experiencia del usuario
+  - Backend: Desarrollando la lógica y las APIs necesarias,
+  - Base de datos: Administrando la base de Datos en MongoDB.
+
+## Sustentación
+
+El proyecto es presentado como una página funcional que demuestra las siguientes caraterísticas.
+
+- Introducción al diseñño y funcionalidades.
+- Una demostración práctica de las pricipales características.
+- Explicación de la arquitectura técnica y estructura del código.
+
